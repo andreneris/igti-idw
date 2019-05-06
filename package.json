@@ -1,0 +1,33 @@
+{
+  "name": "idw-example-igti",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "test": "nyc --reporter=text-summary --reporter=html mocha --require @babel/register",
+    "start": "node index.js"
+  },
+  "bin": "./index.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "nyc": "^14.1.0",
+    "vue": "^2.6.10"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/register": "^7.4.4",
+    "babelify": "^10.0.0",
+    "browserify": "^16.2.3",
+    "gulp": "^4.0.1",
+    "mocha": "^6.1.4",
+    "vinyl-source-stream": "^2.0.0"
+  }
+}
