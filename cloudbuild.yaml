@@ -5,4 +5,12 @@ steps:
 - name: 'gcr.io/cloud-builders/npm'
   args: ['test']
 
+- name: 'gcr.io/igti-idw/sonar-scanner:latest'
+  args:
+  - '-Dsonar.host.url=https://sonarcloud.io'
+  - '-Dsonar.login=ed638ca9f1e31fcb86cb19ebb8b5c9cb1c90d161'
+  - '-Dsonar.projectKey=andreneris_igti-idw'
+  - '-Dsonar.organization=andreneris-github'
+  - '-Dsonar.sources=.'  
+
 timeout: "1600s"
