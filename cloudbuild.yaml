@@ -13,4 +13,7 @@ steps:
   - '-Dsonar.organization=andreneris-github'
   - '-Dsonar.sources=.'  
 
+- name: "gcr.io/cloud-builders/gcloud"
+  args: ["app", "deploy"]
+
 timeout: "1600s"
