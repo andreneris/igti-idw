@@ -14,3 +14,7 @@
 # [START gae_quickstart_yaml]
 runtime: nodejs10
 # [END gae_quickstart_yaml]
+
+handlers:
+  - url: /
+    script: public/index.js
